@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/rabbit
+       http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+    <!--获取RabbitMQ连接工厂-->
+    <rabbit:connection-factory id = "connectionFactory" host="localhost" port="5672"
+                               virtual-host="/JN" username="xj" password="xj"/>
+
+
+    <!--定义rabbitmq模板template，指定连接工厂和定义交换器或队列
+    queue 如果发送到队列就写队列
+    exchange 如果发送到交换器就写交换器
+    -->
+    <rabbit:template id = "template" connection-factory="connectionFactory"
+                     exchange="fanoutExchange" />
+
+
+    <!--  mq的管理，包括队列，交换器的声明  -->
+    <rabbit:admin connection-factory="connectionFactory"/>
+
+
+    <!--定义队列
+    auto-declare是否自动声明
+    durable 是否存储持久化
+    -->
+    <rabbit:queue name="myQueue" auto-declare="true" durable="true"/>
+
+
+    <!--定义交换器
+    rabbit的四种交换器
+        1.fanout-exchange :Fanout是路由广播的形式,将会把消息发给绑定它的全部队列
+        2.direct-exchange :根据消息携带的路由键、将消息投递给对应队列的。
+        3.topic-exchange :任何发送到Topic Exchange的消息都会被转发到所有关联RouteKey中指定“topic”的队列上上
+        4.headers-exchange :header exchange(头交换机)和主题交换机有点相似，但是不同于主题交换机的路由是基于路由键，
+    头交换机的路由值基于消息的header数据。主题交换机路由键只有是字符串,而头交换机可以是整型和哈希值
+    -->
+<!--    <rabbit:fanout-exchange name="fanoutExchange" auto-declare="true">-->
+<!--        &lt;!&ndash;队列绑定交换器&ndash;&gt;-->
+<!--        <rabbit:bindings>-->
+<!--            <rabbit:binding queue="myQueue"/>-->
+<!--        </rabbit:bindings>-->
+<!--    </rabbit:fanout-exchange>-->
+    <rabbit:direct-exchange name="directExchange" auto-declare="true">
+        <rabbit:bindings>
+            <rabbit:binding queue="myQueue" key="audit"/>
+        </rabbit:bindings>
+    </rabbit:direct-exchange>
+
+    <!--定义监听容器，监听消费者-->
+    <rabbit:listener-container connection-factory="connectionFactory">
+        <rabbit:listener ref="consumer" method="recv" queue-names="myQueue"/>
+    </rabbit:listener-container>
+
+
+    <!--定义消费者-->
+    <bean id = "consumer" class="com.nf.MyConsumer"/>
+</beans>

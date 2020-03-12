@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rabbitmq-controller" />
+        <module name="topic" />
+        <module name="utils" />
+        <module name="boot-direct" />
+        <module name="confirm" />
+        <module name="boot-topic" />
+        <module name="tx" />
+        <module name="rabbitmq" />
+        <module name="fair-distribution" />
+        <module name="routing" />
+        <module name="round-robin" />
+        <module name="boot-fanout" />
+        <module name="spring-rabbit" />
+        <module name="publish-subscribe" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-rabbitmq" target="1.8" />
+      <module name="spring-rabbitmq-xml" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="boot-direct" options="-parameters" />
+      <module name="boot-fanout" options="-parameters" />
+      <module name="boot-topic" options="-parameters" />
+      <module name="confirm" options="" />
+      <module name="fair-distribution" options="" />
+      <module name="publish-subscribe" options="" />
+      <module name="rabbitmq" options="-parameters" />
+      <module name="rabbitmq-controller" options="" />
+      <module name="round-robin" options="" />
+      <module name="routing" options="" />
+      <module name="spring-rabbit" options="" />
+      <module name="springboot-rabbitmq" options="-parameters" />
+      <module name="topic" options="" />
+      <module name="tx" options="" />
+      <module name="utils" options="" />
+    </option>
+  </component>
+</project>

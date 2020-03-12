@@ -1,0 +1,13 @@
+# Project exclude paths
+/fair-distribution/target/
+/publish-subscribe/target/
+/rabbitmq-controller/target/
+/round-robin/target/
+/routing/target/
+/spring-rabbit/target/
+/springboot-rabbitmq/boot-direct/target/
+/springboot-rabbitmq/boot-fanout/target/
+/springboot-rabbitmq/boot-topic/target/
+/topic/target/
+/tx/target/
+/utils/target/

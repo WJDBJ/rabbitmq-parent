@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/confirm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/confirm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fair-distribution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fair-distribution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fair-distribution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/publish-subscribe" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/publish-subscribe/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/publish-subscribe/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-controller/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/round-robin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/round-robin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/round-robin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routing" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routing/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rabbit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rabbit/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq/boot-direct/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq/boot-fanout/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq/boot-topic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq/rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/topic/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
