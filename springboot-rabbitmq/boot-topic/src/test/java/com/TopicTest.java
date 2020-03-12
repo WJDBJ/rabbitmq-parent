@@ -16,6 +16,7 @@ public class TopicTest {
     @Test
     public void test() {
         //topicSender.send("xj.x","开播了");
+
         topicSender.send("x","开播了没有");
     }
 }
