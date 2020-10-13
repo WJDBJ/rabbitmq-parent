@@ -35,7 +35,7 @@
         <spring.rabbitmq.version>2.2.1.RELEASE</spring.rabbitmq.version>
         <mail.version>1.6.2</mail.version>
         <spring.version>5.2.0.RELEASE</spring.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencyManagement>
